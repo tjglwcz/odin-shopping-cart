@@ -1,3 +1,8 @@
+import { ProductCard } from "@/components/ProductCard";
 export const Products = () => {
-  return <div>producPs</div>;
+  return (
+    <div className="grid auto-cols-max p-4 md:w-max">
+      <ProductCard />
+    </div>
+  );
 };
