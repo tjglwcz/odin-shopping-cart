@@ -14,7 +14,7 @@ export const Navbar = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <nav className="bg-slate-200 flex justify-between content-center min-h-12 p-4">
+    <nav className="flex justify-between content-center min-h-12 p-4 shadow-sm">
       {!isDesktop && (
         <Sheet>
           <SheetTrigger>
