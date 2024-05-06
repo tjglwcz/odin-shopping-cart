@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/sheet";
 
 import { ShoppingCart, Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 export const Navbar = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
@@ -26,7 +27,9 @@ export const Navbar = () => {
               <SheetDescription>
                 <ul className="">
                   <li>
-                    <Button variant="link">All Products</Button>
+                    <Button variant="link">
+                      <Link to="/products/">All Products</Link>
+                    </Button>
                   </li>
                   <li>
                     <Button variant="link">Electronics</Button>
@@ -47,13 +50,15 @@ export const Navbar = () => {
         </Sheet>
       )}
       <Button variant="ghost" className="text-xl">
-        Logo
+        <Link to="/">Logo</Link>
       </Button>
       <div className="flex gap-2 px-2">
         {isDesktop && (
           <ul className="flex">
             <li>
-              <Button variant="link">All Products</Button>
+              <Button variant="link">
+                <Link to="/products/">All Products</Link>
+              </Button>
             </li>
             <li>
               <Button variant="link">Electronics</Button>
