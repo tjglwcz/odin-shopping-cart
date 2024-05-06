@@ -8,7 +8,7 @@ export const Root = () => {
       <header className="sticky top-0 bg-background">
         <Navbar />
       </header>
-      <main className="h-screen">
+      <main className="min-h-screen">
         <Outlet />
       </main>
       <Footer />
