@@ -15,7 +15,7 @@ export const Products = () => {
   return (
     <div className="grid auto-cols-fr p-4 md:grid-cols-4 gap-4">
       {names.map((name) => (
-        <ProductCard />
+        <ProductCard name={name} category="random category" price={100} />
       ))}
     </div>
   );

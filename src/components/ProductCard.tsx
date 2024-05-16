@@ -8,18 +8,24 @@ import {
 } from "@/components/ui/card";
 import { Button } from "./ui/button";
 
-export const ProductCard = () => {
+interface productCardProps {
+  name: string;
+  category: string;
+  price: number;
+}
+
+export const ProductCard = ({ name, category, price }: productCardProps) => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+        <CardTitle>{name}</CardTitle>
+        <CardDescription>{category}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="min-h-32 w-auto"></div>
       </CardContent>
       <CardFooter className="flex gap-4 items-center justify-between">
-        <p className="text-xl font-semibold">$100</p>
+        <p className="text-xl font-semibold">${price}</p>
         <Button>Add to cart</Button>
       </CardFooter>
     </Card>
