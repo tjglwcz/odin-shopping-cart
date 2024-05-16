@@ -13,7 +13,7 @@ export const Products = () => {
     "card10",
   ];
   return (
-    <div className="grid auto-cols-fr p-4 md:grid-cols-4 lg:grid-cols-6 gap-4 lg:gap-8">
+    <div className="grid auto-cols-fr p-4 md:grid-cols-4 gap-4">
       {names.map((name) => (
         <ProductCard />
       ))}
