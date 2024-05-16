@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "./ui/button";
 
 export const ProductCard = () => {
   return (
@@ -15,10 +16,11 @@ export const ProductCard = () => {
         <CardDescription>Card Description</CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Card Content</p>
+        <div className="min-h-32 w-auto"></div>
       </CardContent>
-      <CardFooter>
-        <p>Card Footer</p>
+      <CardFooter className="flex gap-4 items-center justify-between">
+        <p className="text-xl font-semibold">$100</p>
+        <Button>Add to cart</Button>
       </CardFooter>
     </Card>
   );
