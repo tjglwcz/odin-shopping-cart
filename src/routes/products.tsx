@@ -1,21 +1,24 @@
 import { ProductCard } from "@/components/ProductCard";
+import { useEffect, useState } from "react";
 export const Products = () => {
-  let names = [
-    "card1",
-    "card2",
-    "card3",
-    "card4",
-    "card5",
-    "card6",
-    "card7",
-    "card8",
-    "card9",
-    "card10",
-  ];
+  const [products, setProducts] = useState<any[]>([]);
+
+  useEffect(() => {
+    fetch(`https://fakestoreapi.com/products`)
+      .then((res) => res.json())
+      .then((items) => setProducts(items));
+  }, []);
+
   return (
     <div className="grid auto-cols-fr p-4 md:grid-cols-4 gap-4">
-      {names.map((name) => (
-        <ProductCard name={name} category="random category" price={100} />
+      {products.map((product) => (
+        <ProductCard
+          key={product.id}
+          name={product.title}
+          category={product.category}
+          image={product.image}
+          price={product.price}
+        />
       ))}
     </div>
   );
