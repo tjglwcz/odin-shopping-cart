@@ -28,20 +28,30 @@ export const Navbar = () => {
                 <ul className="">
                   <li>
                     <Button variant="link">
-                      <Link to="/products/">All Products</Link>
+                      <Link to="products/all">All Products</Link>
                     </Button>
                   </li>
                   <li>
-                    <Button variant="link">Electronics</Button>
+                    <Button variant="link">
+                      <Link to="products/electronics">Electronics</Link>
+                    </Button>
                   </li>
                   <li>
-                    <Button variant="link">Jewelery</Button>
+                    <Button variant="link">
+                      <Link to="products/jewelery">Jewelery</Link>
+                    </Button>
                   </li>
                   <li>
-                    <Button variant="link">Men's Clothing</Button>
+                    <Button variant="link">
+                      <Link to="products/men's clothing">Men's Clothing</Link>
+                    </Button>
                   </li>
                   <li>
-                    <Button variant="link">Women's Clothing</Button>
+                    <Button variant="link">
+                      <Link to="products/women's clothing">
+                        Women's Clothing
+                      </Link>
+                    </Button>
                   </li>
                 </ul>
               </SheetDescription>
@@ -57,20 +67,28 @@ export const Navbar = () => {
           <ul className="flex">
             <li>
               <Button variant="link">
-                <Link to="/products/">All Products</Link>
+                <Link to="products/all">All Products</Link>
               </Button>
             </li>
             <li>
-              <Button variant="link">Electronics</Button>
+              <Button variant="link">
+                <Link to="products/electronics">Electronics</Link>
+              </Button>
             </li>
             <li>
-              <Button variant="link">Jewelery</Button>
+              <Button variant="link">
+                <Link to="products/jewelery">Jewelery</Link>
+              </Button>
             </li>
             <li>
-              <Button variant="link">Men's Clothing</Button>
+              <Button variant="link">
+                <Link to="products/men's clothing">Men's Clothing</Link>
+              </Button>
             </li>
             <li>
-              <Button variant="link">Women's Clothing</Button>
+              <Button variant="link">
+                <Link to="products/women's clothing">Women's Clothing</Link>
+              </Button>
             </li>
           </ul>
         )}
